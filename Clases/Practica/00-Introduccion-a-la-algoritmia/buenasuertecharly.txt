@@ -1,0 +1,43 @@
+pre:
+- charly.
+- delfi.
+- sol.
+
+post:
+- la playlist no va a tener mas de 50 canciones.
+- los temas le gustan a los 3.
+
+
+mientras (la playlist no tenga 50 temas) hacer
+	si (la playlist no tiene 50 temas)
+		mientras (no le gusta a delfi o no le gusta a sol)
+			pedirle a charly un tema.
+			preguntarle a delfi si le gusta.
+			preguntasle a sol si le gusta.
+			si (le gusta a delfi y le gusta a sol) entonces
+				agregar a la playlist.
+			sino
+				charly dice "para que me invitan si saben como me pongo"
+
+	si (la playlist no tiene 50 temas)
+		pedirle a delfi un tema.
+		preguntarle a sol si le gusta.
+		preguntasle a charly si le gusta.
+		si (le gusta a sol y le gusta a charly) entonces
+			agregar a la playlist.
+
+	si (la playlist no tiene 50 temas)
+		pedirle a sol un tema.
+		preguntarle a charly si le gusta.
+		preguntasle a delfi si le gusta.
+		si (le gusta a charly y le gusta a delfi) entonces
+			agregar a la playlist.
+
+
+
+
+
+
+
+
+
