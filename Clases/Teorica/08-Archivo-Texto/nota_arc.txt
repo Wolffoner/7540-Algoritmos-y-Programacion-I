@@ -1,0 +1,70 @@
+
+
+FILE * mi_archivo;
+
+
+ -tipos de archivo
+ 
+  - segun su contenido 
+     - de texto = su contenido son caracteres
+     - binarios = todos los demas achivos (mp3,exe,...) 
+
+  -segun el tipo de acceso 
+    secuenciales = se puede accedar a la informacion de forma secuencial
+    de acceso directo =  puedo moverme dentro del archivo a piacere
+
+                      text   binario
+    secuencial         si      si
+    acceso directo     X       si 
+
+
+
+  1- Abrir el archivo
+  2- Operar con el archivo
+  3- Cerrar el archivo
+
+siempre se hacen enel mismo scope ===> misma funcion 
+
+1- Abrir:
+
+  FILE * my_arch;
+
+  my_arch=fopen("/home/darthmendez/readme.txt","r");
+  if  (my_arch==NULL) {
+    error 
+    me voy o cierro otros archivos que habia abierto... 
+    }
+
+   'r' (read)  Si el arch. existe lo abre, y posiciona el puntero de donde estoy al inicio; sino devuelve NULL.
+   'w' (write) si el arch. exite borra su contenido sino lo crea vacio.
+
+2-Operar 
+
+    un archivo contiene registros <> structs , registro (record) es la unidad minima de lectua en un archivo:
+
+      registro para un archivo de texto ?  ====> caracter
+      archivo binario que guarda enteros ? registro?    ====> int ( por que es la cantifdad de 1 y 0 que equivale a un int)
+ 
+      
+
+  - fput
+  - fget
+
+  - fread
+  - fwrite  
+
+  entrada salida con formato
+  -fscanf()
+  -fprintf()
+
+
+  feof(my_arch);   devueve si se llego al fin de archivo == EOF (End Of File) 
+
+  while (not feof(my_arch){
+
+  }
+
+3-Cierre 
+
+   fclose(my_arch);
+
