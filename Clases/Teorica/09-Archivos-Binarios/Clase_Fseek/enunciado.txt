@@ -1,0 +1,15 @@
+El profesor Cangrejo siempre que quiere hacer un asado tiene problemas de logística, 
+debe preguntar uno por uno a los colaboradores si : 
+- Si come carne.
+- Si tiene auto para ir por su cuenta.
+Para eso decidió hacer un archivo binario donde guarda esta información crucial de
+cada uno de sus colaboradores.
+Partiendo del hecho que el archivo ya esta hecho (y bien formado),
+ implementar las siguientes funciones : 
+
+
+void hacer_vegano (char path [MAX_PATH] , int id);
+void hacer_carnivoro(char path [MAX_PATH], int id);
+void asignar_auto(char path [MAX_PATH], int id);
+void sacar_auto(char path [MAX_PATH], int id);
+
